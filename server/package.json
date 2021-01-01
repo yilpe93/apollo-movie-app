@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Movie API with Graphql",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "graphql-yoga": "^1.18.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "babel-node index.js",
+    "dev": "nodemon --exec babel-node index.js"
+  }
+}
