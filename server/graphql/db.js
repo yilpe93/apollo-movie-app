@@ -15,7 +15,9 @@ export const getMovies = async (limit, rating) => {
       minimum_rating: rating,
     },
   });
-  return movies;
+
+  const descMovies = movies.sort((a, b) => parseInt(a.id) - parseInt(b.id));
+  return descMovies;
 };
 
 export const getMovie = async (id) => {

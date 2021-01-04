@@ -6,7 +6,7 @@ const typeDefs = `
     id: Int!
     title: String!
     rating: Float
-    description_into: String
+    description_full: String
     language: String
     medium_cover_image: String
     genres: [String]
